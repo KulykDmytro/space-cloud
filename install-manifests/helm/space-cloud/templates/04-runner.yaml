@@ -209,7 +209,7 @@ spec:
               memory: {{ .Values.runner.resources.requests.memory }}
               cpu: {{ .Values.runner.resources.requests.cpu }}
 ---
-apiVersion: autoscaling/v2beta2
+apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: runner
